@@ -1,0 +1,19 @@
+-in:file:s 8b1x_missingloops.pdb
+-in:file:fullatom
+-loops:loop_file loop1.loops
+
+-nstruct 1
+
+-loops:fast
+-loops:max_kic_build_attempts 250
+-loops:remodel perturb_kic
+-loops:refine refine_kic
+
+-ex1
+-ex2
+
+
+-out:file:fullatom
+
+-out:file:scorefile 8b1x_refine.sc
+
