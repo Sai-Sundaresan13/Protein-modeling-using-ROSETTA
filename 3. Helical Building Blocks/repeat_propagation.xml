@@ -1,0 +1,26 @@
+<ROSETTASCRIPTS>
+    <SCOREFXNS>
+    </SCOREFXNS>
+
+    <RESIDUE_SELECTORS>
+    </RESIDUE_SELECTORS>
+
+    <TASKOPERATIONS>
+    </TASKOPERATIONS>
+
+
+
+    <MOVERS>
+    
+        <RepeatPropagationMover name="repeatify" numb_repeats="8" extract_repeat_info_from_pose="true" start_pose_numb_repeats="1" ideal_repeat="false" start_pose_duplicate_residues="22" first_template_res="1"/>
+       
+    </MOVERS>
+
+    <FILTERS>
+    </FILTERS>
+
+    <PROTOCOLS>
+        
+        <Add mover="repeatify"/>
+    </PROTOCOLS>
+</ROSETTASCRIPTS>
