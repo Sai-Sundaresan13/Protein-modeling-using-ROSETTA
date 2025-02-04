@@ -1,0 +1,20 @@
+<ROSETTASCRIPTS>
+  <SCOREFXNS>
+    <ScoreFunction name="r15" weights="ref2015.wts"/>
+  </SCOREFXNS>
+  <RESIDUE_SELECTORS>
+    <True name="full_pose"/>
+  </RESIDUE_SELECTORS>
+  <TASKOPERATIONS>
+    <ResfileCommandOperation name="rescmd" command="ALLAA EX 1 EX 2 EX_CUTOFF 1" residue_selector="full_pose"/>
+  </TASKOPERATIONS>
+  <MOVERS>
+    <FastDesign name="design" scorefxn="r15" task_operations="rescmd" repeats="3">
+      <MoveMap name="mmap" jump="true" chi="true" bb="true"/>
+    </FastDesign>
+  </MOVERS>
+  <PROTOCOLS>
+    <Add mover="design"/>
+  </PROTOCOLS>
+  <OUTPUT scorefxn="r15"/>
+</ROSETTASCRIPTS>
