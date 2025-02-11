@@ -27,6 +27,7 @@ The designed protein blocks undergo structural relaxation to identify the lowest
 ### 5. Visualization and Analysis
 The final structures are visualized using molecular graphics tools such as PyMOL. Energy calculations and structural quality assessments help evaluate model performance. Comparisons with experimental or previously published computational models validate the results, ensuring the designed proteins meet expected standards.
 
+![Protein Building Block](https://github.com/user-attachments/assets/3b992630-f92c-4fb3-833f-f5a70917eed8)
 
 ## Conclusion
 This project demonstrates the application of Rosetta software in computational protein engineering. By generating and optimizing alpha-helical building blocks, the study contributes to the growing field of de novo protein design. The results indicate that computational modeling can efficiently predict and refine protein structures, paving the way for advancements in nanomaterial design. Future directions include validating the models through molecular dynamics simulations and exploring their potential applications in biomaterial development.
