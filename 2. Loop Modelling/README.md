@@ -15,4 +15,8 @@ Make Necessary changes to the .remodel file by adding the loops codes
 /home/user/rosetta/main/source/bin/loopmodel.linuxgccrelease \
     @flags/flag_refine_loop
 ```
+![Winter_Internship_Report_-007](https://github.com/user-attachments/assets/b758182f-2f04-48ec-8718-c465be74d2cf)
+Modeled Loop
 
+![Winter_Internship_Report_-008](https://github.com/user-attachments/assets/da0252eb-eeb0-4050-8db8-39387c049071)
+Refined Loop Structure
