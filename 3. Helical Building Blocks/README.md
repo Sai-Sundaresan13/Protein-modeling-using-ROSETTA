@@ -1,19 +1,16 @@
-### 2. Loop Modeling
-Loop modeling is employed to ensure proper connectivity between adjacent helices. Blueprint files containing sequence and connectivity information are created and refined. Computational refinement techniques are applied to minimize steric clashes and improve structural stability. This step is critical in maintaining the integrity and functionality of the designed protein structures. The command for loop modeling is:
+### 3. Generation of Helical Building Blocks
+The helical units are arranged in repeating patterns to create larger structures. Structural configurations of three, five, and eight repeats are analyzed to design robust protein scaffolds with predictable properties. By systematically assembling these repeats, it becomes possible to create protein-based materials with enhanced stability and versatility. The command to generate helical building blocks is:
 ```
-/home/user/rosetta/main/tools/remodel/getBluePrintFromCoords.pl \
-    -pdbfile 8b1x_01.pdb
-    -chain A > 8b1x_01.remodel
-```
-Make Necessary changes to the .remodel file by adding the loops codes
-
-```
-/home/user/rosetta/main/source/bin/remodel.linuxgccrelease \
-    @flags/flag_missing_loop
+/home/user/rosetta/main/source/bin/rosetta_scripts.linuxgccrelease \
+    -in:file:s 8b1x_refine.pdb \
+    -parser:protocol repeat_propagation.xml \
+    -out:pdb
 ```
 ```
-/home/user/rosetta/main/source/bin/loopmodel.linuxgccrelease \
-    @flags/flag_refine_loop
+/home/user/rosetta/main/source/bin/rosetta_scripts.linuxgccrelease\
+    -in:file:s 8b1x_block.pdb\
+    -parser:protocol fast_design.xml\
+    -out:pdb
 ```
 
 ![Winter_Internship_Report_-009](https://github.com/user-attachments/assets/3bfb679a-7f8b-4fcd-8652-193d40e71bd4)
