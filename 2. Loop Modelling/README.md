@@ -19,4 +19,5 @@ Make Necessary changes to the .remodel file by adding the loops codes
 Modeled Loop
 
 ![Winter_Internship_Report_-008](https://github.com/user-attachments/assets/da0252eb-eeb0-4050-8db8-39387c049071)
+
 Refined Loop Structure
