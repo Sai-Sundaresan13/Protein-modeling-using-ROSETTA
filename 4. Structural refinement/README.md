@@ -8,3 +8,5 @@ The designed protein blocks undergo structural relaxation to identify the lowest
 ```
 
 
+![pic2](https://github.com/user-attachments/assets/4da9bb32-d74c-4362-b701-2748edaa75dd)
+Refined Structure of Protein Block
